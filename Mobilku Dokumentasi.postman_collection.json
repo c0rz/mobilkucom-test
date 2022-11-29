@@ -1,0 +1,538 @@
+{
+	"info": {
+		"_postman_id": "f3edf891-edb5-4c91-8414-7e745240a216",
+		"name": "Mobilku Dokumentasi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4103219"
+	},
+	"item": [
+		{
+			"name": "Insert Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/sinam/Downloads/b58e239eaff51bcb93c4e7ed11a7fc10.png"
+						},
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "{{date}}",
+							"type": "text"
+						},
+						{
+							"key": "usia",
+							"value": "{{usia}}",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "{{no_hp}}",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "{{city}}",
+							"type": "text"
+						},
+						{
+							"key": "education",
+							"value": "{{edu}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"create"
+					]
+				},
+				"description": "Get All Users"
+			},
+			"response": [
+				{
+					"name": "Response Insert Users",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/sinam/Downloads/b58e239eaff51bcb93c4e7ed11a7fc10.png"
+								},
+								{
+									"key": "name",
+									"value": "Cornelius 1000",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "Thu Nov 04 1999 00:00:00 GMT+0700 (Western Indonesia Time)",
+									"type": "text"
+								},
+								{
+									"key": "usia",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "81231241231",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Kabupaten Bogor",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "Sarjana",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-TR3E47lLcItPtlwcEtOByQvuwuM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Nov 2022 09:00:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success insert.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/sinam/Downloads/b58e239eaff51bcb93c4e7ed11a7fc10.png"
+						},
+						{
+							"key": "name",
+							"value": "Update",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "{{date}}",
+							"type": "text"
+						},
+						{
+							"key": "usia",
+							"value": "{{usia}}",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "{{no_hp}}",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "{{city}}",
+							"type": "text"
+						},
+						{
+							"key": "education",
+							"value": "{{edu}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"1"
+					]
+				},
+				"description": "Get All Users"
+			},
+			"response": [
+				{
+					"name": "Update User by id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/sinam/Downloads/b58e239eaff51bcb93c4e7ed11a7fc10.png"
+								},
+								{
+									"key": "name",
+									"value": "Update",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "{{date}}",
+									"type": "text"
+								},
+								{
+									"key": "usia",
+									"value": "{{usia}}",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "{{no_hp}}",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "{{city}}",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "{{edu}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-PQHtqt2W2NTJnFZvYW2ZytXwQhE\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Nov 2022 09:11:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success update.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response Get All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "735"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2df-WXQteuz5djEQi1QgW3lAZEITCGo\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Nov 2022 09:05:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"full_name\": \"Cornelius 500\",\n            \"bod\": \"1999-11-03T17:00:00.000Z\",\n            \"age\": 23,\n            \"city\": \"Kabupaten Bogor\",\n            \"last_education\": \"Sarjana\",\n            \"pict\": \"/process_images/preview_1669711809305-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jp\"\n        },\n        {\n            \"id\": 2,\n            \"full_name\": \"Cornelius 1000\",\n            \"bod\": \"1981-11-04T17:00:00.000Z\",\n            \"age\": 41,\n            \"city\": \"Kabupaten Kepulauan Seribu\",\n            \"last_education\": \"Sarjana\",\n            \"pict\": \"/process_images/preview_1669711856904-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jp\"\n        },\n        {\n            \"id\": 5,\n            \"full_name\": \"Cornelius 1000\",\n            \"bod\": \"1999-11-03T17:00:00.000Z\",\n            \"age\": 23,\n            \"city\": \"Kabupaten Bogor\",\n            \"last_education\": \"Sarjana\",\n            \"pict\": \"/process_images/preview_1669712455619-b58e239eaff51bcb93c4e7ed11a7fc10.png\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response get by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "266"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10a-s/oy7F/Csxwg0NJfsEYsO483B8o\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Nov 2022 09:06:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"full_name\": \"Cornelius 500\",\n            \"bod\": \"1999-11-03T17:00:00.000Z\",\n            \"age\": 23,\n            \"city\": \"Kabupaten Bogor\",\n            \"last_education\": \"Sarjana\",\n            \"pict\": \"/process_images/preview_1669711809305-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jp\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "name",
+			"value": "Cornelius 1000"
+		},
+		{
+			"key": "date",
+			"value": "Thu Nov 04 1999 00:00:00 GMT+0700 (Western Indonesia Time)"
+		},
+		{
+			"key": "usia",
+			"value": "23"
+		},
+		{
+			"key": "no_hp",
+			"value": "81231241231"
+		},
+		{
+			"key": "city",
+			"value": "Kabupaten Bogor"
+		},
+		{
+			"key": "edu",
+			"value": "Sarjana"
+		}
+	]
+}
