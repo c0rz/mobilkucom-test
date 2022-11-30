@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "nodemon index.js",
-    "build": "build"
+    "build": "echo 'ganteng'"
   },
   "name": "mobilkucom-test",
   "version": "1.0.0",
