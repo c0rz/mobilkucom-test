@@ -12,7 +12,7 @@ exports.create = (req, res) => {
   const data = req.body;
 
   sharp(process.cwd() + "/public/process_images/" + req.file.filename)
-    .resize(1000)
+    .resize(500)
     .toFile(process.cwd() + "/public/process_images/preview_" + req.file.filename);
 
   const querySql =
