@@ -21,7 +21,7 @@
 						},
 						{
 							"key": "name",
-							"value": "{{name}}",
+							"value": "Cornelius 1000",
 							"type": "text"
 						},
 						{
@@ -52,15 +52,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/create",
+					"raw": "http://api.gofoll.com/api/create",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"api",
+						"gofoll",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"create"
@@ -218,15 +216,15 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/1",
+					"raw": "http://103.55.38.98:3300/api/1",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"103",
+						"55",
+						"38",
+						"98"
 					],
-					"port": "3000",
+					"port": "3300",
 					"path": [
 						"api",
 						"1"
@@ -344,15 +342,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/",
+					"raw": "http://api.gofoll.com/api/",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"api",
+						"gofoll",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						""
@@ -429,15 +425,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/1",
+					"raw": "http://api.gofoll.com/api/1",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"api",
+						"gofoll",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"1"
