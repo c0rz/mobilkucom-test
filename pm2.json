@@ -1,0 +1,8 @@
+{
+    "apps": [
+      {
+        "name": "backend - mobilkucom test",
+        "script": "yarn start"
+      }
+    ]
+  }
