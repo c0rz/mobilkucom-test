@@ -11,9 +11,9 @@ function convert(str) {
 exports.create = (req, res) => {
   const data = req.body;
 
-  sharp(process.cwd() + "/process_images/" + req.file.filename)
+  sharp(process.cwd() + "/public/process_images/" + req.file.filename)
     .resize(1000)
-    .toFile(process.cwd() + "/process_images/preview_" + req.file.filename);
+    .toFile(process.cwd() + "/public/process_images/preview_" + req.file.filename);
 
   const querySql =
     "INSERT INTO `users`(`full_name`, `bod`, `age`, `city`, `last_education`, `pict`) VALUES ('" +
@@ -26,7 +26,7 @@ exports.create = (req, res) => {
     data.city +
     "','" +
     data.education +
-    "','/process_images/preview_" +
+    "','/public/process_images/preview_" +
     req.file.filename +
     "')";
   koneksi.query(querySql, function (err, result) {
@@ -63,9 +63,9 @@ exports.view = (req, res) => {
 exports.update = (req, res) => {
   const data = req.body;
 
-  sharp(process.cwd() + "/process_images/" + req.file.filename)
+  sharp(process.cwd() + "/public/process_images/" + req.file.filename)
     .resize(1000)
-    .toFile(process.cwd() + "/process_images/preview_" + req.file.filename);
+    .toFile(process.cwd() + "/public/process_images/preview_" + req.file.filename);
 
   const querySql =
     "UPDATE `users` SET `full_name`='" +
@@ -78,7 +78,7 @@ exports.update = (req, res) => {
     data.city +
     "',`last_education`='" +
     data.education +
-    "',`pict`='/process_images/preview_" +
+    "',`pict`='/public/process_images/preview_" +
     req.file.filename +
     "' WHERE id = " +
     req.params.id;

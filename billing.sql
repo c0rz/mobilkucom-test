@@ -42,8 +42,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `full_name`, `bod`, `age`, `city`, `last_education`, `pict`) VALUES
-(1, 'Cornelius 500', '1999-11-04', 23, 'Kabupaten Bogor', 'Sarjana', '/process_images/preview_1669711809305-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jp'),
-(2, 'Cornelius 1000', '1981-11-05', 41, 'Kabupaten Kepulauan Seribu', 'Sarjana', '/process_images/preview_1669711856904-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jp');
+(1, 'Cornelius 500', '1999-11-04', 23, 'Kabupaten Bogor', 'Sarjana', '/process_images/preview_1669711809305-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jpg'),
+(2, 'Cornelius 1000', '1981-11-05', 41, 'Kabupaten Kepulauan Seribu', 'Sarjana', '/process_images/preview_1669711856904-1647238478835-662840793-20201223_110227_1647238478785-1.0.0.jpg');
 
 --
 -- Indexes for dumped tables
