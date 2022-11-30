@@ -33,4 +33,4 @@ app.post("/api/create", cors(), upload.single("image"), controllers.create);
 app.get("/api/", cors(), controllers.view);
 app.get("/api/:id", cors(), controllers.view);
 
-app.listen(3000, () => console.log(`Server running at port: 3000`));
+app.listen(3300, () => console.log(`Server running at port: 3300`));
